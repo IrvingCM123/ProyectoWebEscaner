@@ -1,0 +1,49 @@
+.scan-success-message {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00ff00;
+  border-radius: 10px;
+  animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.seccion{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background: #0E47A1;
+  border-radius: 1rem;
+  margin-left: 20px;
+  padding: 2px;
+}
+
+.seccion h2 {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.seccion zxing-scanner {
+  width: 250px;
+  align-items: center;
+  justify-self: center;
+}
+
+.datos {
+  color: white;
+}
+.deshabilitado{
+  color: rgb(173, 171, 171);
+}
+.camara{
+  border-radius: 2rem;
+  padding: 15px 10px;
+}
+

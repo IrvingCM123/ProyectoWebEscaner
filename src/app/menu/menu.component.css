@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .namepage{
+    font-size: 2.5rem;
+    font-weight: 520;
+    padding-left: 2rem;
+  }
+  img{
+    align-items: center;
+    justify-content: center;
+    width: 4.2rem;
+    height: 5rem;
+  }
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #000000;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#inicio{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+  }
+  
+  #materia{
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    background-color: #0E47A1;
+    color:white;
+  }
+  #lista{
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    background-color: #0E47A1;
+    color:white;
+  }
+  #config{
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    background-color: #0E47A1;
+    color:white;
+  }
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: #0E47A1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
